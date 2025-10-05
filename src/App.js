@@ -1,8 +1,8 @@
 import { useState } from "react";
 
-import iconStar from "/home/mss/Desktop/faq-accordion-react/src/components-faq-accordion/assets/images/icon-star.svg";
-import iconPlus from "/home/mss/Desktop/faq-accordion-react/src/components-faq-accordion/assets/images/icon-plus.svg";
-import iconMinus from "/home/mss/Desktop/faq-accordion-react/src/components-faq-accordion/assets/images/icon-minus.svg";
+import iconStar from "./components-faq-accordion/assets/images/icon-star.svg";
+import iconPlus from "./components-faq-accordion/assets/images/icon-plus.svg";
+import iconMinus from "./components-faq-accordion/assets/images/icon-minus.svg";
 
 const questionsArray = [
   {
