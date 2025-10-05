@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Work Sans", sans-serif;
+  font-size: 1rem;
+}
+
+:root {
+  --white: hsl(0, 100%, 100%);
+  --purple-100: hsl(275, 100%, 97%);
+  --purple-600: hsl(292, 16%, 49%);
+  --purple-950: hsl(292, 42%, 14%);
+}
+
+/* Background */
+body {
+  min-height: 100vh;
+  /* display: flex; */
+}
+
+/* Outermost Div */
+.main-container {
+  background-color: var(--white);
+  min-height: 100vh;
+  display: grid;
+}
+
+.purple-background {
+  background-image: url(./components-faq-accordion/assets/images/background-pattern-mobile.svg);
+  height: 15rem;
+  /* min-height: 25%; */
+}
+
+.pink-background {
+  background-color: var(--purple-100);
+  /* min-height: 75%; */
+}
+
+/* Overlay Card */
+.card {
+  background-color: var(--white);
+  margin: 1.3rem;
+  padding: 1.3rem;
+  border-radius: 0.7rem;
+  position: relative;
+  bottom: 8rem;
+}
+
+header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+header p {
+  font-weight: 700;
+  font-size: 2rem;
+  margin-left: 2rem;
+}
+
+header img {
+  height: 1.5rem;
+}
+
+/* Questions Container Grid */
+.question-container {
+  margin-top: 1rem;
+  padding-top: 1.5rem;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-rows: auto auto;
+  align-items: center;
+  gap: 1.5rem;
+  border-bottom: 0.5px solid black;
+  color: var(--purple-950);
+  cursor: pointer;
+}
+
+.question-container h3:hover {
+  color: var(--purple-600);
+}
+
+.question-container h3 {
+  grid-column: 1/-2;
+  grid-row: 1/-2;
+  font-weight: 700;
+}
+
+.question-container img {
+  grid-column: 2/-1;
+  grid-row: 1/-2;
+}
+
+.question-container p {
+  grid-column: 1/-1;
+  grid-row: 2/-1;
+  line-height: 1.5rem;
+}
